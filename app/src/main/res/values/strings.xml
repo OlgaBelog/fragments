@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LearnAndPlay</string>
+    <string name="button_learn_text">Учимся</string>
+    <string name="button_play_text">Играем</string>
+    <string name="Hello">Привет, малыш, введи свое имя</string>
+    <string name="Name">Максим</string>
+    <string name="text_label_1">ТестЛабел1</string>
+    <string name="title_learn_letters">Учим буквы</string>
+    <string name="title_learn_numbers">Учим Цифры</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_back">Назад</string>
+</resources>

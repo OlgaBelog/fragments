@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentLetters"
+    android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/main_image_letter"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/background"
+                android:scaleType="centerCrop"
+
+                />
+
+
+ <TableLayout android:layout_height="match_parent"
+     android:layout_width="match_parent">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/letters_button_style"
+                android:textColor="@android:color/holo_orange_dark"
+                android:text="А"
+                 />
+
+
+            <Button
+                style="@style/letters_button_style"
+                android:id="@+id/button2"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="Б"/>
+
+            <Button
+                style="@style/letters_button_style"
+                android:id="@+id/button3"
+                android:textColor="@android:color/holo_purple"
+                android:text="В"/>
+
+            <Button
+                style="@style/letters_button_style"
+                android:id="@+id/button4"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Г"/>
+
+            <Button
+                style="@style/letters_button_style"
+                android:id="@+id/button5"
+                android:textColor="@android:color/holo_blue_bright"
+                android:text="Д"/>
+
+
+        </TableRow>
+
+</TableLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
