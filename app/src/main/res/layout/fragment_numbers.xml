@@ -1,22 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentNumbers">
+    tools:context=".FragmentNumbers"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
 
-        android:text="Учим цифры" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        android:text="Цифра1" />
 
-</LinearLayout>
+
+    <TableLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/letters_button_style"
+                android:textColor="@android:color/holo_orange_dark"
+                android:text="1"
+                />
+
+
+            <Button
+                style="@style/letters_button_style"
+                android:id="@+id/button2"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="2"/>
+
+            <Button
+                style="@style/letters_button_style"
+                android:id="@+id/button3"
+                android:textColor="@android:color/holo_purple"
+                android:text="3"/>
+
+            <Button
+                style="@style/letters_button_style"
+                android:id="@+id/button4"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="4"/>
+
+            <Button
+                style="@style/letters_button_style"
+                android:id="@+id/button5"
+                android:textColor="@android:color/holo_blue_bright"
+                android:text="5"/>
+
+
+        </TableRow>
+        <ImageView
+            android:id="@+id/first_rec"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/rounds0"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:text="+"/>
+        <ImageView
+            android:id="@+id/second_rec"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/rounds0"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:text="="/>
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:text=""/>
+
+
+    </TableLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

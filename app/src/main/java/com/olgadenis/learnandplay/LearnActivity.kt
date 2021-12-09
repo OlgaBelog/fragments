@@ -3,19 +3,10 @@ package com.olgadenis.learnandplay
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import androidx.fragment.app.DialogFragment
-import android.app.Dialog
-import android.media.MediaPlayer
-import android.media.SoundPool
-
-import androidx.appcompat.app.AlertDialog
-
 
 
 class LearnActivity : AppCompatActivity() {
@@ -27,6 +18,9 @@ class LearnActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_learn)
+
+        val strUser: String? = intent.getStringExtra("Username")
+
         bottomNavigationMenu = findViewById(R.id.bottom_navigation)
         headtext = findViewById(R.id.headtext)
 
@@ -37,13 +31,13 @@ class LearnActivity : AppCompatActivity() {
                 R.id.fragment1 -> {
                     fragment = FragmentLetters()
                     replaceFragment(fragment!!)
-                    headtext.text = "Учим буквы"
+                    headtext.text = "Привет, "+strUser+", учим буквы"
 
                 }
                 R.id.fragment2 -> {
                     fragment = FragmentNumbers()
                     replaceFragment(fragment!!)
-                    headtext.text = "Учим цифры"
+                    headtext.text = "Привет, "+strUser+", учим цифры"
                 }
                 R.id.back -> {
                     val intent = Intent(this, MainActivity::class.java)
@@ -59,10 +53,7 @@ class LearnActivity : AppCompatActivity() {
 
         }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-            outState.putBoolean("ActiveButtonPlay", true)
-    }
+
     fun replaceFragment (fragment: Fragment){
         supportFragmentManager
             .beginTransaction()

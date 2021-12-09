@@ -11,7 +11,7 @@
             <ImageView
                 android:id="@+id/main_image_letter"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="270dp"
                 android:src="@drawable/background"
                 android:scaleType="centerCrop"
 
@@ -29,7 +29,7 @@
             <Button
                 android:id="@+id/button1"
                 style="@style/letters_button_style"
-                android:textColor="@android:color/holo_orange_dark"
+                android:textColor="#64F609"
                 android:text="А"
                  />
 
@@ -61,7 +61,204 @@
 
         </TableRow>
 
-</TableLayout>
+
+
+     <TableRow
+         android:id="@+id/tableRow2"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center">
+
+         <Button
+             android:id="@+id/button6"
+             style="@style/letters_button_style"
+             android:textColor="@android:color/holo_orange_dark"
+             android:text="Е"
+             />
+
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button7"
+             android:textColor="@android:color/holo_green_dark"
+             android:text="Ж"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button8"
+             android:textColor="#D5004B"
+             android:text="З"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button9"
+             android:textColor="@color/teal_200"
+             android:text="И"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button10"
+             android:textColor="#D6840B"
+             android:text="К"/>
+
+
+     </TableRow>
+
+     <TableRow
+         android:id="@+id/tableRow3"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center">
+
+         <Button
+             android:id="@+id/button11"
+             style="@style/letters_button_style"
+             android:textColor="#09E812"
+             android:text="Л"
+             />
+
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button12"
+             android:textColor="#FFEB3B"
+             android:text="М"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button13"
+             android:textColor="#9A0DE1"
+             android:text="Н"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button14"
+             android:textColor="#D51053"
+             android:text="О"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button15"
+             android:textColor="#FFC107"
+             android:text="П"/>
+
+
+     </TableRow>
+
+     <TableRow
+         android:id="@+id/tableRow4"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center">
+
+         <Button
+             android:id="@+id/button16"
+             style="@style/letters_button_style"
+             android:textColor="#13EFDB"
+             android:text="Р"
+             />
+
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button17"
+             android:textColor="@color/black"
+             android:text="С"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button18"
+             android:textColor="@android:color/holo_blue_bright"
+             android:text="Т"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button19"
+             android:textColor="@android:color/holo_red_dark"
+             android:text="У"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button20"
+             android:textColor="@android:color/holo_red_light"
+             android:text="Ф"/>
+
+
+     </TableRow>
+
+     <TableRow
+         android:id="@+id/tableRow5"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center">
+
+         <Button
+             android:id="@+id/button21"
+             style="@style/letters_button_style"
+             android:textColor="@android:color/holo_orange_dark"
+             android:text="Х"
+             />
+
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button22"
+             android:textColor="@android:color/holo_green_dark"
+             android:text="Ц"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button23"
+             android:textColor="@android:color/holo_purple"
+             android:text="Ч"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button24"
+             android:textColor="#FFEB3B"
+             android:text="Ш"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button25"
+             android:textColor="@android:color/holo_blue_bright"
+             android:text="Щ"/>
+
+
+     </TableRow>
+
+     <TableRow
+         android:id="@+id/tableRow6"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center">
+
+         <Button
+             android:id="@+id/button26"
+             style="@style/letters_button_style"
+             android:textColor="@android:color/holo_orange_dark"
+             android:text="Э"
+             />
+
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button27"
+             android:textColor="#28FB03"
+             android:text="Ю"/>
+
+         <Button
+             style="@style/letters_button_style"
+             android:id="@+id/button28"
+             android:textColor="#F30707"
+             android:text="Я"/>
+
+
+
+
+     </TableRow>
+
+ </TableLayout>
 
 
 
